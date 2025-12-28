@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body id="top">
+<header>
+    <nav class="navbar">
+        <div class="logo">Abinash Das</div>
+        <div class="topmenu">
+            <a href="#home">
+                <i class="fa fa-home" aria-hidden="true"></i> Home
+            </a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Project Details</a>
+            <a href="#skills">Skills</a>
+            <a href="#recommendations">Recommendations</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="card">
+        <h2 class="section-title">Home</h2>
+        <p>Welcome to the portfolio of Abinash Das.</p>
+    </section>
+
+    <section id="about" class="card">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-wrapper">
+            <img src="profile.jpg" alt="Profile photo of Abinash Das" class="profile-image" />
+            <div class="about-text">
+                <h3 class="profile_name">Abinash Das</h3>
+                <p>
+                    Passionate student developer focused on web development and AI,
+                    building projects with HTML, CSS, JavaScript, and Python to solve real-world problems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="card">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="webdev.png" alt="Web Development logo" class="skill-logo-img" />
+                <h3>Web Development</h3>
+                <p>Building responsive, accessible websites with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="skill-item">
+                <img src="python.png" alt="Python logo" class="skill-logo-img" />
+                <h3>Python</h3>
+                <p>Problem solving, scripting, and experimenting with ML libraries.</p>
+            </div>
+            <div class="skill-item">
+                <img src="linux.png" alt="Linux logo" class="skill-logo-img" />
+                <h3>Linux</h3>
+                <p>Daily driver for development, shell scripting, and system configuration.</p>
+            </div>
+            <div class="skill-item">
+                <img src="ds.png" alt="Data Structures logo" class="skill-logo-img" />
+                <h3>Data Structures</h3>
+                <p>Implementing efficient algorithms and understanding complexity.</p>
+            </div>
+            <div class="skill-item">
+                <img src="db.png" alt="Databases logo" class="skill-logo-img" />
+                <h3>Databases</h3>
+                <p>Designing schemas and querying data with SQL and NoSQL tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="card">
+        <h2 class="section-title">Project Details</h2>
+
+        <div class="project-card">
+            <h3>Smart Study Planner</h3>
+            <p>Web app that schedules study sessions using priority and due date to reduce last-minute cramming.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Dev Portfolio Generator</h3>
+            <p>CLI tool that creates static portfolio sites from a simple JSON config file.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Linux Setup Automator</h3>
+            <p>Shell scripts that install favorite tools, configure dotfiles, and optimize a fresh Linux install.</p>
+        </div>
+    </section>
+
+    <section id="recommendations" class="card">
+        <h2 class="section-title">Recommendations</h2>
+
+        <div id="recommendation-list">
+            <blockquote class="recommendation">
+                “Abinash quickly turns ideas into working prototypes and always looks for ways to improve them.”
+                <cite> – Hackathon Teammate</cite>
+            </blockquote>
+            <blockquote class="recommendation">
+                “Strong problem-solving skills and a genuine interest in understanding how systems work.”
+                <cite> – CS Instructor</cite>
+            </blockquote>
+            <blockquote class="recommendation">
+                “Reliable, curious, and great at breaking down complex tasks for the team.”
+                <cite> – Project Mentor</cite>
+            </blockquote>
+        </div>
+
+        <form id="recommendation-form">
+            <label for="new-recommendation">Add a Recommendation:</label>
+            <textarea id="new-recommendation" required
+                      placeholder="Write your recommendation here"></textarea>
+            <button type="submit">Submit Recommendation</button>
+        </form>
+    </section>
+</main>
+
+<div id="popup" class="popup hidden">
+    <div class="popup-content">
+        <p>Thank you for submitting your recommendation!</p>
+        <button id="close-popup">Close</button>
+    </div>
+</div>
+
+<footer class="footer">
+    &copy; 2025 Abinash Das. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
